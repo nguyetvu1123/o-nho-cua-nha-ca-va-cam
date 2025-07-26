@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ổ nhỏ của nhà cà và cam</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar-web">
+    <h1>Ổ nhỏ của nhà cà và cam</h1>
+  </header>
+
+  <main class="container">
+    <!-- Đăng ký -->
+    <section class="form-section">
+      <h2>Đăng ký</h2>
+      <form>
+        <input type="text" placeholder="Họ và tên" required />
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Mật khẩu" required />
+        <button type="submit">Đăng ký</button>
+      </form>
+    </section>
+
+    <!-- Đăng nhập -->
+    <section class="form-section">
+      <h2>Đăng nhập</h2>
+      <form>
+        <input type="text" placeholder="Username hoặc Email" required />
+        <input type="password" placeholder="Mật khẩu" required />
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </section>
+
+    <!-- Đề cử truyện -->
+    <section class="form-section">
+      <h2>Đề cử truyện</h2>
+      <form>
+        <input type="text" placeholder="Tên truyện" required />
+        <input type="text" placeholder="Tên tác giả" required />
+        <button type="submit">Gửi đề cử</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+/* Reset và font */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tổng thể */
+body {
+  background: #f9f7ff;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #d9c2f0, #fff0b3);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.avatar-web {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #5c3d84;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Form Section */
+.form-section {
+  background: #fff;
+  border-left: 6px solid #c5a2ff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-section h2 {
+  color: #6a47a6;
+  margin-bottom: 15px;
+}
+
+/* Inputs & Button */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  background: #e0b0ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #cc99ff;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tủ sách - Ổ nhỏ của nhà cà và cam</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar-web">
+    <h1>Ổ nhỏ của nhà cà và cam</h1>
+  </header>
+
+  <main class="container">
+    <!-- Đã đọc -->
+    <section class="form-section">
+      <h2>📚 Đã đọc</h2>
+      <ul class="list">
+        <li>Truyện A _ Chương 12</li>
+        <li>Truyện B _ Chương 5</li>
+        <li>Truyện C _ Chương 20</li>
+      </ul>
+    </section>
+
+    <!-- Yêu thích -->
+    <section class="form-section">
+      <h2>💖 Yêu thích</h2>
+      <ul class="list">
+        <li>Truyện D</li>
+        <li>Truyện A</li>
+        <li>Truyện E</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nhiệm vụ - Ổ nhỏ của nhà cà và cam</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar-web">
+    <h1>Ổ nhỏ của nhà cà và cam</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>🌟 Nhiệm vụ hàng ngày</h2>
+      <ul class="list mission-list">
+        <li>🎁 Quà đăng nhập <span class="reward">+20 xu vàng</span></li>
+        <li>⌛ Online 60 phút <span class="reward">+100 xu vàng</span></li>
+        <li>📖 Đọc truyện 30 phút <span class="reward">+50 xu vàng</span></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+.mission-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #f2dfff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fdf6ff;
+}
+
+.reward {
+  font-weight: bold;
+  color: #e6b800;
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #e0b0ff;
+}
+
+.form-group button {
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4d06f;
+  color: #5a4a00;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-group button:hover {
+  background-color: #ffec99;
+}
+.gift-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gift-btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 8px 10px;
+  background-color: #f7e1ff;
+  border: 1px solid #ddaaff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #5c3d84;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.gift-btn:hover {
+  background-color: #ecd0ff;
+}
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tôi - Ổ nhỏ của nhà cà và cam</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar-web">
+    <h1>Ổ nhỏ của nhà cà và cam</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Đăng truyện -->
+    <section class="form-section">
+      <h2>✍️ Đăng truyện</h2>
+      <form>
+        <label for="story-type">Loại truyện:</label>
+        <select id="story-type">
+          <option>Chuyển ver</option>
+          <option>Dịch</option>
+          <option>Chuyển ver & dịch</option>
+          <option>Tự viết</option>
+        </select>
+        <button type="submit">Tiếp tục</button>
+      </form>
+    </section>
+
+    <!-- Tài khoản & bảo mật -->
+    <section class="form-section">
+      <h2>🔐 Tài khoản & bảo mật</h2>
+      <div class="profile-info">
+        <img src="avatar.jpg" alt="Avatar" class="profile-avatar">
+        <div>
+          <p><strong>Username:</strong> ca_va_cam</p>
+          <p><strong>Email:</strong> example@email.com</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Đổi ảnh đại diện:</label>
+        <button>📁 Tải từ máy</button>
+        <button>📷 Chụp ảnh</button>
+      </div>
+      <form>
+        <input type="password" placeholder="Đặt mã PIN mới" />
+        <input type="password" placeholder="Đổi mật khẩu mới" />
+        <button type="submit">Lưu thay đổi</button>
+      </form>
+    </section>
+
+    <!-- Liên hệ -->
+    <section class="form-section">
+      <h2>📧 Liên hệ & phản hồi</h2>
+      <p>Mọi thắc mắc vui lòng gửi về: <strong>nguyetvu20191123@gmail.com</strong></p>
+    </section>
+
+  </main>
+</body>
+</html>
+<section class="form-section">
+  <h2>🧧 Tặng quà cho truyện</h2>
+  <div class="gift-options">
+    <button class="gift-btn">❤️ Tim (5 xu)</button>
+    <button class="gift-btn">💐 Bó hoa (10 xu)</button>
+    <button class="gift-btn">💳 Thẻ yêu quý (50 xu)</button>
+  </div>
+</section>
+<div class="story-actions">
+  <p>🧧 Tặng quà | 📌 Lưu truyện | 💬 Bình luận</p>
+</div>
